@@ -81,6 +81,7 @@ gem "dotenv"
 gem "faker"
 gem "htmlbeautifier"
 gem "http"
+gem "ruby-openai" # Add the ruby-openai gem here
 gem "sqlite3", "~> 1.4"
 gem "table_print"
 gem "simple_form"
