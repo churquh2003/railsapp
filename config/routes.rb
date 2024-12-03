@@ -1,4 +1,36 @@
 Rails.application.routes.draw do
+  get("/", { :controller => "quizzes", :action => "index" })
+
+  # Routes for the Quiz resource:
+   # CREATE
+   post("/insert_quiz", { :controller => "quizzes", :action => "create" })
+  
+   # READ
+   get("/quizzes", { :controller => "quizzes", :action => "index" })
+   get("/quizzes/:path_id", { :controller => "quizzes", :action => "show" })
+   
+   # UPDATE
+   post("/modify_quiz/:path_id", { :controller => "quizzes", :action => "update" })
+   
+   # DELETE
+   get("/delete_quiz/:path_id", { :controller => "quizzes", :action => "destroy" })
+ 
+  # CREATE
+  post("/insert_quiz", { :controller => "quizzes", :action => "create" })
+          
+  # READ
+  get("/quizzes", { :controller => "quizzes", :action => "index" })
+  
+  get("/quizzes/:path_id", { :controller => "quizzes", :action => "show" })
+  
+  # UPDATE
+  
+  post("/modify_quiz/:path_id", { :controller => "quizzes", :action => "update" })
+  
+  # DELETE
+  get("/delete_quiz/:path_id", { :controller => "quizzes", :action => "destroy" })
+
+  #------------------------------
 
   # This is a blank app! Pick your first screen, build out the RCAV, and go from there. E.g.:
 

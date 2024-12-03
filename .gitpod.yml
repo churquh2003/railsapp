@@ -1,5 +1,4 @@
 image: firstdraft/appdev-rails-template
-
 tasks:
   - before: |
       sudo cp -r /home/student /home/gitpod
@@ -22,7 +21,6 @@ ports:
     visibility: public
   - port: 5432
     onOpen: ignore
-
 vscode:
   extensions:
     - vortizhe.simple-ruby-erb
